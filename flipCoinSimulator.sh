@@ -22,3 +22,10 @@ echo ${arr_heads[@]};
 echo ${arr_tails[@]};
 
 echo "Count of heads is $heads and count of tails is $tails";
+
+if [ $heads -gt $tails ]
+then
+	echo "Heads won by $(($heads-$tails)) times";
+else
+	echo "Tails won by $(($tails-$heads)) times";
+fi
